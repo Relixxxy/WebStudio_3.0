@@ -1,5 +1,9 @@
 @import './utils/variables';
 @import './utils/mixins';
+<<<<<<< HEAD
+=======
+@import './utils/visually-hidden';
+>>>>>>> 9ba0b0c1d63b3bf85b87335d6d1f321b6b85005b
 
 @import './base/common';
 @import './base/container';
@@ -8,6 +12,11 @@
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
+<<<<<<< HEAD
+=======
+@import './components/logo';
+@import './components/mobile-menu.scss';
+>>>>>>> 9ba0b0c1d63b3bf85b87335d6d1f321b6b85005b
 
 @import './layout/header';
 @import './layout/solutions';
