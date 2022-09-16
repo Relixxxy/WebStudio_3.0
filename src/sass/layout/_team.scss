@@ -1,0 +1,61 @@
+.team {
+  background-color: var(--light-back-color);
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.team__list-item {
+  width: 450px;
+  background-color: var(--dark-theme-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__list-item-block-desc {
+  @include flex($ai: center, $jc: flex-start);
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.team__list-title {
+  display: block;
+  @include font($fw: 500, $fs: 16px, $lh: 19px);
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team__list-desc {
+  display: block;
+  @include font($fw: 400, $fs: 16px, $lh: 19px);
+  letter-spacing: 0.03em;
+  color: var(--desc-color);
+}
+
+.team__socials-list {
+  @include flex;
+  column-gap: 10px;
+}
+
+.team__socials-list-item {
+  @include flex;
+  height: 44px;
+  width: 44px;
+  margin-bottom: 24px;
+}
+
+.social-link-sprite {
+  fill: var(--sprite-color);
+  transition: fill var(--primary-transform);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-color);
+  }
+}
