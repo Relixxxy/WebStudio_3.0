@@ -1,0 +1,33 @@
+.activities {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: block;
+  }
+
+  .activities__list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .activities__list-item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+
+  .activities__list-item-title {
+    position: absolute;
+    height: 70px;
+    @include flex;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    color: var(--dark-theme-color);
+    @include font($fw: 700, $fs: 14px, $lh: 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

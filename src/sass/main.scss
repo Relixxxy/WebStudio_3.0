@@ -1,1 +1,19 @@
+@import './utils/variables';
+@import './utils/mixins';
+
 @import './base/common';
+@import './base/container';
+
+@import './components/section';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/solutions';
+@import './layout/activities';
+@import './layout/features';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/products';
