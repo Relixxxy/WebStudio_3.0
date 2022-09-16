@@ -1,0 +1,125 @@
+.mobile-block {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-block {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: var(--dark-theme-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .mobile-block__container {
+    height: 100%;
+    @include flex($jc: space-between, $ai: flex-start);
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    letter-spacing: 0.02em;
+  }
+
+  .mobile-block__close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 99;
+  }
+
+  .mobile-block__bottom {
+    @include flex($ai: flex-start);
+    flex-direction: column;
+    row-gap: 64px;
+  }
+
+  .mobile-block__menu {
+    @include flex($ai: flex-start);
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .mobile-block__address {
+    @include flex($ai: flex-start);
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .mobile-block__link {
+    color: var(--title-color);
+    @include font(40px, 500, 47px);
+  }
+
+  .mobile-block__tel-link {
+    color: var(--title-color);
+    @include font(34px, 500, 40px);
+  }
+
+  .mobile-block__mail-link {
+    color: var(--desc-color);
+    @include font(24px, 500, 28px);
+  }
+
+  .mobile-block__links {
+    @include flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+
+  .mobile-block__links-item {
+    @include font(18px, 500, 22px);
+    color: var(--primary-color);
+
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+  }
+
+  .mobile-block__links-link {
+    color: var(--primary-color);
+  }
+}
+
+@media screen and (max-height: 520px) {
+  .mobile-block__menu {
+    row-gap: 16px;
+  }
+  .mobile-block__address {
+    row-gap: 16px;
+  }
+  .mobile-block__bottom {
+    row-gap: 32px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .mobile-block__menu {
+    row-gap: 10px;
+  }
+  .mobile-block__address {
+    row-gap: 10px;
+  }
+  .mobile-block__bottom {
+    row-gap: 20px;
+  }
+}
