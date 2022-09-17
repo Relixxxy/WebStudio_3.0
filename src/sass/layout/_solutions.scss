@@ -1,0 +1,71 @@
+.solutions {
+  width: 100%;
+  height: 400px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/bg-main-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-origin: padding-box;
+  background-clip: padding-box;
+}
+
+.solutions__container {
+  height: 100%;
+  @include flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.solutions__title {
+  max-width: 360px;
+  color: var(--dark-theme-color);
+  @include font(26px, 900, 42px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.solutions__btn {
+  width: 216px;
+}
+
+@media screen and (min-width: 768px) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/bg-main-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-origin: padding-box;
+    background-clip: padding-box;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-origin: padding-box;
+    background-clip: padding-box;
+  }
+
+  .solutions__title {
+    max-width: 700px;
+    @include font(44px, 900, 60px);
+  }
+}

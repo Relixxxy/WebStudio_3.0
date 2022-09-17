@@ -1,0 +1,30 @@
+.logo {
+  color: #000;
+  font-family: var(--secondary-font);
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+  transition: color var(--primary-transform);
+
+  &.dark-theme {
+    color: var(--dark-theme-color);
+  }
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.logo__accent {
+  color: var(--primary-color);
+  transition: color var(--primary-transform);
+
+  .logo:hover > & {
+    color: #000;
+
+    &.dark-theme {
+      color: var(--dark-theme-color);
+    }
+  }
+}

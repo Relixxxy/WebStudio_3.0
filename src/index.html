@@ -4,9 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./sass/main.scss" />
+    <include src="./partials/head-links.html"></include>
   </head>
-  <body>
-    <main></main>
+  <body class="studio-body">
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/solutions.html"></include>
+      <include src="./partials/features.html"></include>
+      <include src="./partials/activities.html"></include>
+      <include src="./partials/team.html"></include>
+      <include src="./partials/clients.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-window.html"></include>
   </body>
+
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modals.js"></script>
 </html>

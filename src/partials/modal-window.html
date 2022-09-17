@@ -1,0 +1,54 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-window">
+    <button class="modal-window__close-btn" data-modal-close>
+      <svg class="modal-window__close-icon" width="30" height="30">
+        <use href="./images/sprite.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <p class="modal-window__title">Залиште свої дані, ми вам передзвонимо</p>
+    <form class="modal-form">
+      <label class="modal-form__label"
+        >Ім'я
+
+        <input class="modal-form__field" type="text" name="username" required />
+        <svg class="modal-form__field-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-modal-person"></use>
+        </svg>
+      </label>
+      <label class="modal-form__label"
+        >Телефон
+
+        <input class="modal-form__field" type="tel" name="tel" required />
+        <svg class="modal-form__field-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-modal-phone"></use>
+        </svg>
+      </label>
+      <label class="modal-form__label"
+        >Пошта
+
+        <input class="modal-form__field" type="email" name="email" required />
+        <svg class="modal-form__field-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-modal-envelope"></use>
+        </svg>
+      </label>
+      <label class="modal-form__label"
+        >Коментар
+        <textarea
+          class="modal-form__textarea"
+          placeholder="Введіть текст"
+        ></textarea>
+      </label>
+      <input
+        name="checkbox"
+        type="checkbox"
+        id="modal-form__checkbox"
+        class="modal-form__checkbox visually-hidden"
+      />
+      <label for="modal-form__checkbox" class="modal-form__policy"
+        >Погоджуюся з розсилкою та приймаю
+        <a class="modal-form__policy-link" href="#">Умови договору</a>
+      </label>
+      <button class="studio-button" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
