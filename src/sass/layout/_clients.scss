@@ -5,6 +5,7 @@
 }
 
 .clients__list-item {
+  cursor: pointer;
   @include flex;
   width: 210px;
   padding-top: 16px;

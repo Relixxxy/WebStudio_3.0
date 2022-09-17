@@ -1,0 +1,139 @@
+.page-footer {
+  background-color: var(--dark-back-color);
+}
+
+.page-footer__container {
+  @include flex($jc: space-between);
+  flex-direction: column;
+  row-gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__first {
+  @include flex($jc: center);
+  flex-direction: column;
+}
+
+.footer-address {
+  margin-top: 20px;
+  @include flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-style: normal;
+}
+
+.footer-address__info {
+  color: var(--dark-theme-color);
+  @include font(14px, 400, 24px);
+  letter-spacing: 0.03em;
+}
+
+.footer-address__link {
+  color: rgba(255, 255, 255, 0.6);
+  @include font(14px, 400, 24px);
+  letter-spacing: 0.03em;
+  transition: color var(--primary-transform);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.footer__subtitle {
+  color: var(--dark-theme-color);
+  @include font(14px, 700, 16px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sprite-dark-theme {
+  fill: var(--dark-theme-color);
+}
+
+.footer__sprite-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer__form {
+  @include flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__form-input {
+  color: var(--dark-theme-color);
+  background-color: transparent;
+  width: 450px;
+  height: 50px;
+  padding: 15px 5px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.03em;
+}
+.footer__form-btn {
+  @include flex;
+  column-gap: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer__form-input {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__form-input {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__form-input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer__form-input {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .footer__form-input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    flex-direction: row;
+    column-gap: 165px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  .footer__form {
+    flex-direction: row;
+    column-gap: 12px;
+  }
+
+  .footer__form-input {
+    width: 358px;
+  }
+
+  .footer__subtitle {
+    text-align: start;
+  }
+}

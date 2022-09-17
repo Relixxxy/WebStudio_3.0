@@ -7,6 +7,10 @@
   cursor: pointer;
   transition: color var(--primary-transform);
 
+  &.dark-theme {
+    color: var(--dark-theme-color);
+  }
+
   &:hover {
     color: var(--primary-color);
   }
@@ -18,5 +22,9 @@
 
   .logo:hover > & {
     color: #000;
+
+    &.dark-theme {
+      color: var(--dark-theme-color);
+    }
   }
 }
