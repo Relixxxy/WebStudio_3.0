@@ -42,7 +42,7 @@
 .products__list-item {
   position: relative;
   cursor: pointer;
-  width: 450px;
+  max-width: 450px;
   height: 404px;
   overflow: hidden;
   border: 1px solid #eeeeee;

@@ -1,20 +1,80 @@
 <footer class="page-footer">
   <div class="container page-footer__container">
     <div class="page-footer__first">
-      <a class="logo link-none" href="./index.html">
-        <span class="logo__accent">Web</span>Studio
+      <a class="logo link-none dark-theme" href="./index.html">
+        <span class="logo__accent dark-theme">Web</span>Studio
       </a>
-      <address class="address">
-        <span class="address__info">м. Київ, пр-т Лесі Українки, 26</span>
-        <a class="address__link link-none" href="mailto:info@devstudio.com">
+      <address class="footer-address">
+        <span class="footer-address__info"
+          >м. Київ, пр-т Лесі Українки, 26</span
+        >
+        <a
+          class="footer-address__link link-none"
+          href="mailto:info@devstudio.com"
+        >
           info@devstudio.com
         </a>
-        <a class="address__link link-none" href="tel:+38 096 111 11 11">
+        <a class="footer-address__link link-none" href="tel:+38 096 111 11 11">
           +38 096 111 11 11
         </a>
       </address>
     </div>
-    <div class="page-footer__mid"></div>
-    <div class="page-footer__last"></div>
+    <div class="page-footer__mid">
+      <h3 class="footer__subtitle">приєднуйтесь</h3>
+      <ul class="team__socials-list list-none">
+        <li class="team__socials-list-item footer__sprite-item">
+          <a href="#" class="team__socials-list-link"
+            ><svg
+              class="social-link-sprite sprite-dark-theme"
+              width="20"
+              height="20"
+            >
+              <use href="./images/sprite.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="team__socials-list-item footer__sprite-item">
+          <a href="#" class="team__socials-list-link"
+            ><svg
+              class="social-link-sprite sprite-dark-theme"
+              width="20"
+              height="20"
+            >
+              <use href="./images/sprite.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="team__socials-list-item footer__sprite-item">
+          <a href="#" class="team__socials-list-link"
+            ><svg
+              class="social-link-sprite sprite-dark-theme"
+              width="20"
+              height="20"
+            >
+              <use href="./images/sprite.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="team__socials-list-item footer__sprite-item">
+          <a href="#" class="team__socials-list-link"
+            ><svg
+              class="social-link-sprite sprite-dark-theme"
+              width="20"
+              height="20"
+            >
+              <use href="./images/sprite.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__last">
+      <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
+      <form class="footer__form">
+        <input type="email" class="footer__form-input" placeholder="E-mail" />
+        <button class="studio-button footer__form-btn" type="submit">
+          Підписатися
+          <svg class="footer__form-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-plane"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
   </div>
 </footer>

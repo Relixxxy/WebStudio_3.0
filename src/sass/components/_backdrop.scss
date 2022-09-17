@@ -5,10 +5,12 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: transform var(--primary-transform);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(0);
 }
