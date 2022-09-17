@@ -112,7 +112,7 @@
   }
 
   .address__link {
-    @include flex;
+    @include flex($jc: flex-start);
     font-style: normal;
     color: var(--desc-color);
     transition: color var(--primary-transform);

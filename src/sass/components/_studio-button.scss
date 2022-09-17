@@ -1,0 +1,22 @@
+.studio-button {
+  @include flex;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--primary-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--dark-theme-color);
+  @include font(16px, 700, 30px);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: background-color var(--primary-transform);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
