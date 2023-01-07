@@ -1,8 +1,6 @@
 .page-header {
   height: 80px;
-  border-bottom: 1px;
-  border-color: #ececec;
-  border-style: solid;
+  border-bottom: 1px solid #ececec;
   @include font(14px, 500, 16px);
 }
 
